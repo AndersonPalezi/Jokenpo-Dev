@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Define valores padrão para padding e margin, e utiliza o modelo de caixa border-box para todos os elementos. */
+}
+
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Define a imagem de fundo, configura o corpo como um contêiner flexível, centraliza horizontal e verticalmente, e define a altura mínima como 100% da altura da viewport. */
+}
+
+h1, h3, p {
+    margin: 10px 0; /* Adicione margens para melhor espaçamento */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* Aplica margens para melhor espaçamento, centraliza horizontal e centraliza o texto nos elementos h1, h3 e p. */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    text-align: center; /* Alinha o conteúdo no centro */
+    background-color: rgba(199, 197, 197, 0.453);
+    padding: 100px 20px ;
+    /* Configura o contêiner como um contêiner flexível em coluna, centraliza horizontal e verticalmente, define altura como 100% da viewport, alinha o texto ao centro, adiciona uma cor de fundo com transparência e aplica padding. */
+}
+
+.placar {
+    font-weight: 900;
+    padding: 10px 4%;
+    /* Define a fonte como negrito e aplica padding ao elemento com a classe 'placar'. */
+}

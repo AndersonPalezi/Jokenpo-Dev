@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accest/css/style.css">
+    <title>Jokenpô abacatinho</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--O trecho de código HTML <div class="container"></div> 
+        representa uma div (elemento de divisão) em HTML que possui uma classe associada a ela.
+        class="container": O atributo class é usado para associar uma ou mais classes CSS ao elemento.
+        No caso específico, a classe atribuída é "container". Classes são usadas para aplicar estilos
+        ou comportamentos específicos a elementos HTML. Neste exemplo, a classe "container" pode ser
+        usada para estilizar visualmente a div ou aplicar regras de layout específicas.-->
+        <h1>JS-Jokenpô</h1>
+
+        <h3>Jogador</h3>
+        <div class="jokenpo">
+            <img src="./accest/img/pedra.png" alt="pedra">
+            <img src="./accest/img/papel.png" alt="papel">
+            <img src="./accest/img/tesoura.png" alt="tesoura">
+        </div>
+        <form name="formJokenpo">
+            <input type="radio" name="grupo" id="pedra">Pedra
+            <input type="radio" name="grupo" id="papel">Papel
+            <input type="radio" name="grupo" id="tesoura">tesoura
+            <!--
+
+           O trecho de código HTML <input type="radio" name="grupo" 
+           id="pedra">Pedra representa um elemento de entrada de rádio 
+           (<input type="radio">) em um formulário HTML. Aqui está uma explicação em português:
+           <input type="radio">: Esta tag HTML cria um botão de rádio, 
+           que é um tipo de controle de entrada que permite aos usuários 
+           selecionar uma opção de um conjunto de opções.
+           name="grupo": O atributo name é usado para agrupar botões 
+           de rádio relacionados. Neste caso, todos os botões de rádio 
+           com name="grupo" serão tratados como parte do mesmo grupo,
+           permitindo que apenas uma opção seja selecionada de cada vez dentro desse grupo.
+           id="pedra": O atributo id fornece uma identificação única para o elemento. 
+           Neste caso, o ID é "pedra", o que pode ser útil para referenciar este elemento específico em CSS ou JavaScript.
+           Pedra: O texto "Pedra" é o rótulo associado ao botão de rádio.
+           Este rótulo é exibido na interface do usuário para indicar a opção correspondente.-->
+            <p>
+                <input type="button" value=" JOGAR " onclick="jogar()">
+                <!--type="button": Define o tipo de input como botão.
+            value="  JOGAR ": Define o texto exibido no botão como "JOGAR".
+            onclick="jogar()": Define um evento de clique associado ao botão. 
+            Quando o botão é clicado, a função jogar() é chamada. Isso implica
+            que há uma função JavaScript chamada jogar() que será executada quando o botão for clicado.-->
+                <input type="reset" value=" RESET " onclick="resetar()">
+                <!--type="reset": Define o tipo de input como um botão de reset. Esse tipo de botão é
+            geralmente usado para redefinir os valores dos campos de um formulário para seus valores padrão.
+            value=" RESET ": Define o texto exibido no botão como "RESET".
+            onclick="resetar()": Define um evento de clique associado ao botão. 
+            Quando o botão é clicado, a função resetar() é chamada. Assim como 
+            no primeiro botão, isso implica que há uma função JavaScript chamada 
+            resetar() que será executada quando o botão for clicado.-->
+            </p>
+        </form>
+        <hr>
+        <!--A tag <hr> em HTML é utilizada para criar uma linha horizontal, 
+            geralmente para separar conteúdos ou seções em uma página. 
+            A tag <hr> é uma tag vazia, 
+            o que significa que não possui uma tag de fechamento correspondente.-->
+        <h3>Computador</h3>
+        <img src="./accest/img/pc.png" alt="pc" id="pc">
+        <hr>
+
+        <div class="placar">
+            <hr>
+            <p class="my-score">Humano:<span id="human-score">0</span></p>
+            <hr>
+            <p class="machine-score">Computador :<span id="machine-score">0</span></p>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="./accest/script/script.js"></script>
+
+</html>
